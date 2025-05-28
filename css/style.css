@@ -2,14 +2,24 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-ul {
+
+h1, 
+ul,
+p{
     margin: 0px;
+}
+
+ul {
     padding: 0px;
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+img {
+    max-width: 100%;
+    display: block;
 }
 
 .header-bg {
@@ -83,7 +93,7 @@ a {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .header-menu {
         gap: 12px;
     }
@@ -93,4 +103,84 @@ a {
         font-size: 14px;
     }
 }
+
+
+.intro-bg {
+    background-color: #E0D8CC;
+}
     
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 120px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.intro-imagem img {
+    grid-column: 1;
+    grid-row: 1/3;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.intro-conteudo {
+    grid-column: 2;
+    grid-row: 1/3;
+    align-self: center;
+    text-align: right;
+    
+}
+
+.intro h1 {
+    margin-bottom: 8px;
+    font-size: 60px;
+    line-height: 0.8;
+    color: #012719;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.descricao {
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 36px;
+    color: #00120C;
+    text-align: right;
+}
+
+.texto-inicio {
+    font-size: 24px;
+    line-height: 1.33;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.intro a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    background: #609682;
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .1);
+}
+
+.intro a:hover {
+    background: #3F8269;
+}
+

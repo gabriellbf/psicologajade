@@ -1,0 +1,123 @@
+.font-1-xxl {
+    font: 500 3.75rem/0.8 "Rubik", sans-serif;
+}
+
+.font-1-xl {
+    font: 500 2.25rem/1 "Rubik";
+}
+
+.font-1-l {
+    font: 500 1.5rem/1.5 "Rubik";
+}
+
+.font-1-l2 {
+    font: 500 1.5rem/1.33 "Rubik";
+}
+
+.font-1-m {
+    font: 400 1.125rem/1.33 "Rubik";
+}
+
+.font-1-s {
+    font: 300 1.125rem/1.125 "Rubik";
+}
+
+.font-2-xxl {
+    font: 400 5rem/1.33 "DM Serif Display";
+}
+
+.font-2-xl {
+    font: 400 2.5rem/1.2 "DM Serif Display";
+}
+
+.font-3-xl-b {
+    font: 700 2.5rem/1.2 "Roboto";
+}
+
+.font-3-m {
+    font: 400 1.5rem/1.5 "Roboto";
+}
+
+.font-3-s-m {
+    font: 500 1.5rem/1.33 "Roboto";
+}
+
+.font-3-s {
+    font: 400 1.5rem/1.5 "Roboto";
+}
+
+.font-3-l {
+    font: 300 2.5rem/1 "Roboto";
+}
+
+
+@media (max-width: 1200px) {
+    .font-1-xxl{
+        font-size: 3rem;
+    }
+
+    .font-1-xl{
+        font-size: 2rem;
+    }
+
+    .font-1-m{
+        font-size: 1rem;
+    }
+
+    .font-3-m {
+        font-size: 1.25rem;
+    }
+
+    .font-3-s{
+        font-size: 1.25rem;
+    }
+
+    .font-1-l{
+        font-size: 20px;
+    }
+
+    .font-2-xxl {
+        font-size: 3.75rem;
+    }
+    .font-3-xl-b {
+        font-size: 1.50rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .font-1-xxl{
+        font-size: 2.25rem;
+    }
+
+    .font-1-xl{
+        font-size: 1.75rem;
+    }
+
+    .font-1-m {
+        font-size: 0.75rem;
+    }
+
+    .font-3-m {
+        font-size: 1.25rem;
+    }
+
+    .font-3-s{
+        font-size: 1rem;
+    }
+
+    .font-1-l{
+        font-size: 1.125rem;
+    }
+    
+    .font-2-xxl {
+        font-size: 2.5rem;
+    }
+
+    .font-2-xl {
+        font-size: 2rem;
+    }
+
+    .font-3-xl-b {
+        font-size: 1.25rem;
+    }
+}

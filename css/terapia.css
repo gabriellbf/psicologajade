@@ -1,0 +1,71 @@
+.terapia {
+    background: url(../img/icones/top-right.svg) no-repeat top 
+    30px right 0px;
+}
+
+.maisSobre {
+    max-width: 1101px;
+    max-height: 480px;
+    display: inline-block;
+}
+
+.maisSobre p {
+  margin-bottom: 2rem;
+}
+
+.itens-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px 40px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.itens-lista div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: var(--cor-w);
+    background: var(--cor-p1);
+    padding: 16px;
+    text-align: center;
+}
+
+.itens-lista p{
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+
+  .terapia {
+    background: none;
+  }
+
+  .itens-lista {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 16px 32px;
+  }
+
+  .itens-lista div {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .itens-lista {
+    grid-template-columns: 1fr;
+    gap: 12px 0;
+  }
+
+  .maisSobre p {
+    margin-bottom: .5rem;
+  }
+
+  .itens-lista div {
+    padding: 10px;
+  }
+
+}

@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-p7);
+}
+
+h1, 
+ul,
+p{
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+span {
+    color: var(--cor-p1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;    
+}

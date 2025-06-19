@@ -1,0 +1,46 @@
+.tea h2 {
+    margin-bottom: 0;
+}
+.tea h3 {
+    margin-top: 12px;
+}
+
+.tea-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.tea-imagem {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.tea-imagem img {
+    aspect-ratio: 560 / 744;
+    border-radius: 5px;
+}
+
+.tea-texto {
+    grid-column: 2;
+    
+}
+
+.tea-texto p {
+    margin-bottom: 36px;
+    
+}
+
+@media (max-width: 1200px) {
+    .tea-conteudo {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 800px) { 
+    .tea-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+}

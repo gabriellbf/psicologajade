@@ -42,8 +42,16 @@
     font: 500 1.5rem/1.33 "Roboto";
 }
 
+.font-3-s-f {
+    font: 500 1.25rem/2.25 "Roboto";
+}
+
 .font-3-s {
     font: 400 1.5rem/1.5 "Roboto";
+}
+
+.font-3-s-l {
+    font: 400 1.125rem/1.33 "Roboto";
 }
 
 .font-3-l {
@@ -82,6 +90,10 @@
     .font-3-xl-b {
         font-size: 1.50rem;
     }
+
+    .font-3-l {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -103,6 +115,7 @@
 
     .font-3-s{
         font-size: 1rem;
+        line-height: 1.75;
     }
 
     .font-1-l{
@@ -119,5 +132,9 @@
 
     .font-3-xl-b {
         font-size: 1.25rem;
+    }
+    
+    .font-3-l {
+        font-size: 1.5rem;
     }
 }

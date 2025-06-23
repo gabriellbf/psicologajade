@@ -2,11 +2,17 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-p7);
+    padding-top: 116px;
 }
 
-h1, 
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
 ul,
-p{
+p,
+dd{
     margin: 0px;
 }
 
@@ -33,3 +39,36 @@ span {
     padding: 10px;
     box-sizing: border-box;    
 }
+
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.whatsapp-fixo img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+    
+}
+
+.whatsapp-fixo img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 500px) {
+    body {
+        padding-top: 170px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding-top: 210px;
+    }
+}
+
+

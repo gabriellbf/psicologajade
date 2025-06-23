@@ -3,6 +3,7 @@
 /* Utilitários */
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
+@import "./utilidades/animacao.css";
 
 /* Site */
 @import "./header.css";
@@ -12,4 +13,6 @@
 @import "./citacao.css";
 @import "./sobremim.css";
 @import "./tea.css";
+@import "./faq.css";
+@import "./footer.css";
 

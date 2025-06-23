@@ -7,7 +7,9 @@
     <title>Psicóloga Jade Távora</title>
     <meta name="description" content="Aqui, você encontra um espaço acolhedor para falar sobre o que sente, sem julgamentos.">
     
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon2.svg" type="image/svg+xml">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,39 +18,39 @@
 <body>
     <header class="header-bg">
         <div class="header container">
-            <a href="./"><img src="./img/jade-logo.svg" alt="cerebro logo"></a>
+            <a href="./"><img src="./img/jade-logo.svg" width="96" height="96" alt="cerebro logo"></a>
             
             <nav  aria-label="navegação">
                 <ul class="header-menu font-1-m">
-                    <li><a href="./">Início</a></li>
-                    <li><a href="#">Terapia</a></li>
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">TEA</a></li>
-                    <li><a href="#">Dúvidas</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#terapia">Terapia</a></li>
+                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#tea">TEA</a></li>
+                    <li><a href="#duvidas">Dúvidas</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="intro-bg">
+    <main class="intro-bg" id="inicio">
         <div class="intro container">
             <div class="intro-conteudo">
-                <h1 class="font-1-xxl cor-p6">Jade Távora Soares</h1>
-                    <p class="descricao font-1-m">Psicóloga - Especialista em Análise do Comportamento <br>CRP: 04/74248</p>
-                    <p class="texto-inicio font-3-s cor-p7">Aqui, você encontra um espaço acolhedor para falar sobre o que sente, sem julgamentos. Um lugar seguro para olhar para si, entender suas emoções e cuidar da sua saúde mental.</p>
-                    <a class="button font-1-l" href="#">Agendar Consulta <img src="./img/redes/icons8-whatsapp-intro.svg" alt="whatsapp logo"></a>
+                <h1 class="font-1-xxl cor-p6" data-anime="200">Jade Távora Soares</h1>
+                    <p class="descricao font-1-m" data-anime="300">Psicóloga - Especialista em Análise do Comportamento <br>CRP: 04/74248</p>
+                    <p class="texto-inicio font-3-s cor-p7" data-anime="400">Aqui, você encontra um espaço acolhedor para falar sobre o que sente, sem julgamentos. Um lugar seguro para olhar para si, entender suas emoções e cuidar da sua saúde mental.</p>
+                    <a class="button font-1-l" data-anime="600" href="https://wa.link/4nkp9r" target="_blank">Agendar Consulta <img src="./img/redes/icons8-whatsapp-intro.svg" width="32" height="32" alt="whatsapp logo"></a>
             </div>
-            <div class="intro-imagem">
-                <img src="./img/fotos-otimizado/foto-capa.jpg" alt="foto de Jade Távora sorrindo">
+            <div class="intro-imagem fadeInLeft" data-anime="300">
+                <img src="./img/fotos-otimizado/foto-capa.jpg" width="509" height="760" alt="foto de Jade Távora sorrindo">
             </div>
         </div>
     </main>
-    <article>
+    <article id="terapia">
         <div class="terapia container ">
             <h2 class="font-1-xxl cor-p6">Sobre a terapia<span>.</span></h2>
             <div class="maisSobre">
             <p class="font-3-s cor-p7">
-                Minha abordagem é baseada na <b>Análise do Comportamento Aplicada (ABA)</b>, uma metodologia que tem se mostrado extremamente eficaz no desenvolvimento e evolução dos meus pacientes. A cada sessão, trabalho para promover um progresso real, observando e reforçando cada conquista, por menor que seja. 
+                Minha abordagem é baseada na <strong>Análise do Comportamento Aplicada (ABA)</strong>, uma metodologia que tem se mostrado extremamente eficaz no desenvolvimento e evolução dos meus pacientes. A cada sessão, trabalho para promover um progresso real, observando e reforçando cada conquista, por menor que seja. 
             </p>
             <p class="font-3-s cor-p7">
                 Para mim, a terapia vai muito além de uma simples consulta. Meu compromisso é com a melhoria contínua da qualidade de vida e saúde mental dos meus pacientes. Ofereço um serviço completo, onde estou sempre disponível para apoiar quando você mais precisa, dentro e fora das sessões. O meu objetivo é garantir que você se sinta acompanhado e motivado em sua jornada de autoconhecimento e crescimento.
@@ -81,7 +83,7 @@
             <p class="citacao-autor font-3-xl-b">B. F. SKINNER</p>
         </div>
     </article>  
-    <article class="sobre-bg">
+    <article class="sobre-bg" id="sobremim">
         <div class="faixa-subtitulo"></div>
         <div class="sobre container">
             <div class="sobreMim">          
@@ -104,29 +106,93 @@
                 </p>
             </div>
             <div class="sobreMim-imagem">
-                <img src="./img/fotos-otimizado/foto-sobremim.jpg" alt="foto de Jade Távora">
+                <img src="./img/fotos-otimizado/foto-sobremim.jpg" width="560" height="860" alt="foto de Jade Távora">
             </div>
         </div>    
     </article>
-    <article>
+    <article id="tea">
         <div class="tea container">
             <h2 class="font-1-xxl cor-p6">TEA<span>.</span></h2>
             <h3 class="font-3-l">Transtorno do Espectro Autista</h3>
             <div class="tea-conteudo">
                 <div class="tea-texto">
                     <p class="font-3-s cor-p7">
-                        O TEA é um campo que, apesar de pouco discutido, é extremamente relevante, e foi com esse olhar de acolhimento e respeito que entrei de cabeça nessa área. <b>Acredito que cada indivíduo é único, e a terapia deve ser pensada de maneira individualizada para ajudar a desenvolver o potencial de cada um.</b> Meu trabalho busca sempre oferecer um atendimento que não só olhe para os desafios do TEA, mas também para as grandes conquistas que podem ser alcançadas, respeitando o tempo e o espaço de cada paciente.
+                        O TEA é um campo que, apesar de pouco discutido, é extremamente relevante, e foi com esse olhar de acolhimento e respeito que entrei de cabeça nessa área. <strong>Acredito que cada indivíduo é único, e a terapia deve ser pensada de maneira individualizada para ajudar a desenvolver o potencial de cada um.</strong> Meu trabalho busca sempre oferecer um atendimento que não só olhe para os desafios do TEA, mas também para as grandes conquistas que podem ser alcançadas, respeitando o tempo e o espaço de cada paciente.
                     </p>
                     <p class="font-3-s cor-p7">
                         Sempre acreditei na importância da inclusão, e desde cedo busquei entender e me conectar com crianças que tinham necessidades diferentes. Ao longo da minha trajetória, o Transtorno do Espectro Autista (TEA) surgiu como uma área que me tocou profundamente, e foi quando comecei a trabalhar com essa temática que percebi o quanto essa conexão era verdadeira.
                     </p>
                 </div>
                 <div class="tea-imagem">
-                    <img src="./img/fotos-otimizado/foto-tea.jpg" alt="foto de Jade Távora">
+                    <img src="./img/fotos-otimizado/foto-tea.jpg" width="560" height="744" alt="foto de Jade Távora">
                 </div>
             </div>
         </div>
     </article>
+    <article class="faq-bg" id="duvidas">
+        <div class="faq container">
+            <h2 class="font-1-xxl cor-p6">Perguntas Frequentes(FAQ)<span>.</span></h2>
+            <dl>
+                <div>
+                    <dt><button class="font-1-l cor-p7" aria-controls="pergunta1" aria-expanded="true">Como funciona o processo terapêutico?</button></dt>
+                    <dd id="pergunta1" class="font-3-s-l cor-p7 ativa">O processo terapêutico começa com uma conversa acolhedora para que eu possa conhecer você, entender o que te trouxe até aqui e identificar como posso ajudar. As sessões são semanais ou quinzenais, de acordo com a demanda, e seguem um plano construído de forma personalizada, sempre com base no seu ritmo e nas suas necessidades. Tudo o que é falado na terapia é sigiloso e tratado com muito respeito e cuidado.</dd>
+                </div>
+                <div>
+                    <dt><button class="font-1-l cor-p7" aria-controls="pergunta2" aria-expanded="false">Qual o valor da sessão?</button></dt>
+                    <dd id="pergunta2" class="font-3-s-l cor-p7">Para informações sobre valores, entre em contato pelo whatsapp! Assim posso te explicar tudo direitinho, esclarecer dúvidas e entender como posso te ajudar da melhor forma possível.</dd>
+                </div>
+                <div>
+                    <dt><button class="font-1-l cor-p7" aria-controls="pergunta3" aria-expanded="false">Qual a duração e frequência das sessões?</button></dt>
+                    <dd id="pergunta3" class="font-3-s-l cor-p7">As sessões duram, em média, 50 minutos e acontecem uma vez por semana. Em alguns casos específicos, podemos ajustar a frequência conforme a necessidade.</dd>
+                </div>
+                <div>
+                    <dt><button class="font-1-l cor-p7" aria-controls="pergunta4" aria-expanded="false">Você atende apenas online?</button></dt>
+                    <dd id="pergunta4" class="font-3-s-l cor-p7">A maioria dos meus atendimentos é realizada de forma online, o que garante praticidade, conforto e a possibilidade de atender pessoas de diferentes lugares. No entanto, também tenho um espaço físico preparado com muito carinho para quem preferir ou precisar do atendimento presencial.</dd>
+                </div>
+                <div>
+                    <dt><button class="font-1-l cor-p7" aria-controls="pergunta5" aria-expanded="false">Como saber se é hora de procurar terapia?</button></dt>
+                    <dd id="pergunta5" class="font-3-s-l cor-p7">Se você tem se sentido sobrecarregado(a), ansioso(a), triste ou com dificuldades nos relacionamentos, a terapia pode ajudar. Só o fato de pensar em buscar ajuda já é um sinal de que talvez seja o momento certo.</dd>
+                </div>
+            </dl>
+        </div>
+    </article>
+    <footer class="footer-bg">
+        <div class="footer container">
+            <img src="./img/logo-rodape.svg" width="267" height="150" alt="Jade Távora">
+            <div class="footer-contato">
+                <h3 class="font-3-s-m cor-p7">Contato</h3>
+                <ul class="font-3-s-l cor-p7">
+                    <li><a href="tel:+5531971423810">+55 31 97142-3810</a></li>
+                    <li><a href="mailto:psi.jadetavora@gmail.com">psi.jadetavora@gmail.com</a></li>
+                    <li class="font-3-s-l cor-p7">Minhas redes:</li>
+                </ul>
+                <div class="footer-redes">
+                    <a href="https://www.linkedin.com/in/jade-távora-soares/" target="_blank">
+                        <img src="./img/redes/icons8-linkedin-b.svg" width="32" height="32" alt="Linkedin">
+                    </a>
+                    <a href="https://wa.link/4nkp9r" target="_blank">
+                        <img src="./img/redes/icons8-whatsapp-b.svg" width="32" height="32" alt="Whatsapp">
+                    </a>
+                    <a href="https://www.instagram.com/psi.jadetavora/" target="_blank">
+                        <img src="./img/redes/icons8-instagram-b.svg" width="32" height="32" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-informacoes">
+                <h3 class="font-3-s-m cor-p7">Informações</h3>
+                <p class="font-3-s-l cor-p7">Seg a Sex: 8h às 20h</p>
+                <p class="font-3-s-l cor-p7">Consultar disponibilidade!</p>
+            </div>
+            <p class="footer-copy font-1-s cor-p7">Psicóloga Jade Távora © Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
+    <a href="https://wa.link/4nkp9r" class="whatsapp-fixo" target="_blank" aria-label="WhatsApp">
+        <img src="./img/icones/whatsapp-icon-right.svg" 
+        width="80" height="80" alt="Ícone WhatsApp">
+    </a>
+
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -3,6 +3,10 @@
     30px right 0px;
 }
 
+#terapia {
+  scroll-margin-top: 100px;
+}
+
 .maisSobre {
     max-width: 1101px;
     max-height: 480px;
@@ -39,9 +43,7 @@
 
 @media (max-width: 1200px) {
 
-  .terapia {
-    background: none;
-  }
+
 
   .itens-lista {
     grid-template-columns: repeat(2, 1fr);
@@ -55,17 +57,38 @@
 }
 
 @media (max-width: 800px) {
+
+  .terapia {
+    background: none;
+  }
+
   .itens-lista {
     grid-template-columns: 1fr;
     gap: 12px 0;
   }
 
   .maisSobre p {
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
   }
 
   .itens-lista div {
     padding: 10px;
   }
 
+  .terapia h2 {
+    margin-bottom: 32px;
+  }
+
+}
+
+@media (max-width: 500px) {
+    #terapia {
+        scroll-margin-top: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    #terapia {
+        scroll-margin-top: 200px;
+    }
 }

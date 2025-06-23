@@ -1,0 +1,96 @@
+.faq-bg {
+    background: var(--cor-j1);
+}
+
+#duvidas {
+  scroll-margin-top: 100px;
+}
+
+.faq h2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.faq dl {
+    margin-bottom: 60px;
+}
+
+.faq dl > div {
+    padding: 20px;
+    border-radius: 4px;
+    background: var(--cor-w);
+    margin-bottom: 14px;
+}
+
+.faq button  {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+.faq button::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--cor-p1);
+}
+
+.faq button::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background: url(../img/icones/seta-abrir.svg) no-repeat center;
+    background-size: contain;
+    transition: transform 0.3s ease;
+}
+
+.faq button:hover::after,
+.faq button[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.faq dd {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    padding-left: 20px;
+    padding-top: 0px;
+    max-width: 105ch;
+}
+
+.faq dd.ativa {
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .faq h2 {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .faq dl {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    #duvidas {
+        scroll-margin-top: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    #duvidas {
+        scroll-margin-top: 200px;
+    }
+}

@@ -59,15 +59,15 @@ span {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 534px) {
     body {
         padding-top: 170px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 419px) {
     body {
-        padding-top: 210px;
+        padding-top: 200px;
     }
 }
 

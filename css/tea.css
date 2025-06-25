@@ -5,7 +5,7 @@
 }
 
 #tea {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 90px;
 }
 
 .tea::before {
@@ -43,6 +43,7 @@
 .tea-imagem img {
     aspect-ratio: 560 / 744;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .tea-texto {

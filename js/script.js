@@ -37,6 +37,23 @@ perguntas.forEach((pergunta) => {
     pergunta.addEventListener('click', ativarPergunta);
 });
 
+//Menu Hambúrguer
+
+const menuAbrir = document.querySelector('.mobile-menu');
+const menu = document.querySelector('.header-menu');
+
+menuAbrir.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+});
+
+const itens = document.querySelectorAll('.header-menu a');
+
+itens.forEach((link) => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('ativo');
+  });
+});
+
 //Animação
 if (window.SimpleAnime) {
     new SimpleAnime();

@@ -2,7 +2,10 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-p7);
-    padding-top: 116px;
+}
+
+main {
+    padding-top: 95px;
 }
 
 html {
@@ -59,16 +62,6 @@ span {
 }
 
 
-@media (max-width: 534px) {
-    body {
-        padding-top: 170px;
-    }
-}
 
-@media (max-width: 419px) {
-    body {
-        padding-top: 200px;
-    }
-}
 
 

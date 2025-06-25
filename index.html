@@ -8,8 +8,8 @@
     <meta name="description" content="Aqui, você encontra um espaço acolhedor para falar sobre o que sente, sem julgamentos.">
     
     <link rel="icon" href="./img/favicon2.svg" type="image/svg+xml">
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +17,23 @@
 </head>
 <body>
     <header class="header-bg">
-        <div class="header container">
-            <a href="./"><img src="./img/jade-logo.svg" width="96" height="96" alt="cerebro logo"></a>
+        <nav class="header container">
+            <a href="./"><img src="./img/jade-logo.svg" width="75" height="75" alt="cerebro logo"></a>
+
+            <button class="mobile-menu" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             
-            <nav  aria-label="navegação">
-                <ul class="header-menu font-1-m">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#terapia">Terapia</a></li>
-                    <li><a href="#sobremim">Sobre mim</a></li>
-                    <li><a href="#tea">TEA</a></li>
-                    <li><a href="#duvidas">Dúvidas</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul class="header-menu font-1-m">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#terapia">Terapia</a></li>
+                <li><a href="#sobremim">Sobre mim</a></li>
+                <li><a href="#tea">TEA</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="intro-bg" id="inicio">
@@ -38,7 +42,7 @@
                 <h1 class="font-1-xxl cor-p6" data-anime="200">Jade Távora Soares</h1>
                     <p class="descricao font-1-m" data-anime="300">Psicóloga - Especialista em Análise do Comportamento <br>CRP: 04/74248</p>
                     <p class="texto-inicio font-3-s cor-p7" data-anime="400">Aqui, você encontra um espaço acolhedor para falar sobre o que sente, sem julgamentos. Um lugar seguro para olhar para si, entender suas emoções e cuidar da sua saúde mental.</p>
-                    <a class="button font-1-l" data-anime="600" href="https://wa.link/4nkp9r" target="_blank">Agendar Consulta <img src="./img/redes/icons8-whatsapp-intro.svg" width="32" height="32" alt="whatsapp logo"></a>
+                    <a class="button font-1-l" data-anime="600" href="https://l1nk.dev/psicologajade" target="_blank">Agendar Consulta <img src="./img/redes/icons8-whatsapp-intro.svg" width="32" height="32" alt="whatsapp logo"></a>
             </div>
             <div class="intro-imagem fadeInLeft" data-anime="300">
                 <img src="./img/fotos-otimizado/foto-capa.jpg" width="509" height="760" alt="foto de Jade Távora sorrindo">
@@ -170,7 +174,7 @@
                     <a href="https://www.linkedin.com/in/jade-távora-soares/" target="_blank">
                         <img src="./img/redes/icons8-linkedin-b.svg" width="32" height="32" alt="Linkedin">
                     </a>
-                    <a href="https://wa.link/4nkp9r" target="_blank">
+                    <a href="https://l1nk.dev/psicologajade" target="_blank">
                         <img src="./img/redes/icons8-whatsapp-b.svg" width="32" height="32" alt="Whatsapp">
                     </a>
                     <a href="https://www.instagram.com/psi.jadetavora/" target="_blank">
@@ -187,7 +191,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.link/4nkp9r" class="whatsapp-fixo" target="_blank" aria-label="WhatsApp">
+    <a href="https://l1nk.dev/psicologajade" class="whatsapp-fixo" target="_blank" aria-label="WhatsApp">
         <img src="./img/icones/whatsapp-icon-right.svg" 
         width="80" height="80" alt="Ícone WhatsApp">
     </a>

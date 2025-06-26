@@ -10,6 +10,8 @@
 
 <br>
 
+<img src="./demo.gif" alt="Demonstração animada do projeto">
+
 <br>
 
 ## ✨ Sobre o Projeto

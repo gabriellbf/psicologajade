@@ -35,7 +35,7 @@ As seguintes ferramentas e tecnologias foram utilizadas na construção do proje
 
 - **HTML5:** Para a estrutura e semântica do conteúdo.
 - **CSS3:** Para estilização, layout (Flexbox) e responsividade (Media Queries).
-- **JavaScript (Vanilla):** Para toda a interatividade da página, como o menu mobile e o accordion do FAQ.
+- **JavaScript:** Para toda a interatividade da página, como o menu mobile e o accordion do FAQ.
 - **Git & GitHub:** Para versionamento e hospedagem do código.
 - **GitHub Pages:** Para a hospedagem da demonstração ao vivo.
 

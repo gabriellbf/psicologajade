@@ -4,7 +4,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/gabriellbf/psicologajade?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/gabriellbf/psicologajade?style=for-the-badge)
 
-> Projeto de Landing Page responsiva desenvolvido como parte do meu portfólio pessoal, aplicando conceitos de HTML, CSS e JavaScript funcional.
+> Landing Page institucional responsiva desenvolvida para o portfólio, utilizando HTML, CSS e JavaScript puro com foco em performance e usabilidade.
 
 ### [➡️ Visite a demonstração ao vivo](https://gabriellbf.github.io/psicologajade/)
 
@@ -47,7 +47,7 @@ As seguintes ferramentas e tecnologias foram utilizadas na construção do proje
 
 **Gabriel França**
 
-- LinkedIn: [https://www.linkedin.com/in/gabrielbfrança/](https://www.linkedin.com/in/gabrielbfrança/))
+- LinkedIn: [https://www.linkedin.com/in/gabrielbfrança/](https://www.linkedin.com/in/gabrielbfrança/)
 - E-mail: gabbriel.barbosa1@gmail.com
 
 ---

@@ -1,11 +1,6 @@
-
 .sobre-bg {
     background: var(--cor-j1);
     position: relative;
-}
-
-#sobremim {
-  scroll-margin-top: 90px;
 }
 
 .sobre {
@@ -144,15 +139,5 @@
         top: 7rem;
         height: 150px;
     }
-
-    #sobremim {
-        scroll-margin-top: 150px;
-    }
 }
 
-
-@media (max-width: 400px) {
-    #sobremim {
-        scroll-margin-top: 200px;
-    }
-}

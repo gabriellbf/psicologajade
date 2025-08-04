@@ -7,6 +7,7 @@
     <title>Psicóloga Jade Távora</title>
     <meta name="description" content="Aqui, você encontra um espaço acolhedor para falar sobre o que sente, sem julgamentos.">
     <meta name="format-detection" content="telephone=no">
+    <script>document.documentElement.className += " js";</script>
     
     <link rel="icon" href="./img/favicon2.svg" type="image/svg+xml">
     <link rel="preload" href="./css/style.min.css" as="style">
@@ -27,7 +28,7 @@
                 <span></span>
             </button>
             
-            <ul class="header-menu font-1-m">
+            <ul class="header-menu font-1-m js-menu">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#terapia">Terapia</a></li>
                 <li><a href="#sobremim">Sobre mim</a></li>
@@ -37,7 +38,7 @@
         </nav>
     </header>
 
-    <main class="intro-bg" id="inicio">
+    <main class="intro-bg " id="inicio">
         <div class="intro container">
             <div class="intro-conteudo">
                 <h1 class="font-1-xxl cor-p6" data-anime="200">Jade Távora Soares</h1>
@@ -50,8 +51,8 @@
             </div>
         </div>
     </main>
-    <article id="terapia">
-        <div class="terapia container ">
+    <article id="terapia" class="js-scroll">
+        <div class="terapia container">
             <h2 class="font-1-xxl cor-p6">Sobre a terapia<span>.</span></h2>
             <div class="maisSobre">
             <p class="font-3-s cor-p7">
@@ -79,7 +80,7 @@
             </div>
         </div>
     </article>
-    <article class="citacao-bg">
+    <article class="citacao-bg js-scroll">
         <div class="citacao">
             <p class="citacao-texto font-2-xxl cor-p7">
                 <span class="aspas">“</span>
@@ -88,7 +89,7 @@
             <p class="citacao-autor font-3-xl-b">B. F. SKINNER</p>
         </div>
     </article>  
-    <article class="sobre-bg" id="sobremim">
+    <article class="sobre-bg js-scroll" id="sobremim">
         <div class="faixa-subtitulo"></div>
         <div class="sobre container">
             <div class="sobreMim">          
@@ -115,7 +116,7 @@
             </div>
         </div>    
     </article>
-    <article id="tea">
+    <article id="tea" class="js-scroll">
         <div class="tea container">
             <h2 class="font-1-xxl cor-p6">TEA<span>.</span></h2>
             <h3 class="font-3-l">Transtorno do Espectro Autista</h3>
@@ -134,12 +135,12 @@
             </div>
         </div>
     </article>
-    <article class="faq-bg" id="duvidas">
+    <article class="faq-bg js-scroll" id="duvidas">
         <div class="faq container">
             <h2 class="font-1-xxl cor-p6">Perguntas Frequentes(FAQ)<span>.</span></h2>
             <dl>
                 <div>
-                    <dt><button class="font-1-l cor-p7" aria-controls="pergunta1" aria-expanded="true">Como funciona o processo terapêutico?</button></dt>
+                    <dt><button class="font-1-l cor-p7" aria-controls="pergunta1" aria-expanded="false">Como funciona o processo terapêutico?</button></dt>
                     <dd id="pergunta1" class="font-3-s-l cor-p7">O processo terapêutico começa com uma conversa acolhedora para que eu possa conhecer você, entender o que te trouxe até aqui e identificar como posso ajudar. As sessões são semanais ou quinzenais, de acordo com a demanda, e seguem um plano construído de forma personalizada, sempre com base no seu ritmo e nas suas necessidades. Tudo o que é falado na terapia é sigiloso e tratado com muito respeito e cuidado.</dd>
                 </div>
                 <div>

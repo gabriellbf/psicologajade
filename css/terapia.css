@@ -3,10 +3,6 @@
     30px right 0px;
 }
 
-#terapia {
-  scroll-margin-top: 90px;
-}
-
 .maisSobre {
     max-width: 1101px;
     max-height: 480px;
@@ -79,16 +75,4 @@
     margin-bottom: 32px;
   }
 
-}
-
-@media (max-width: 500px) {
-    #terapia {
-        scroll-margin-top: 150px;
-    }
-}
-
-@media (max-width: 400px) {
-    #terapia {
-        scroll-margin-top: 200px;
-    }
 }

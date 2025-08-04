@@ -8,10 +8,6 @@ main {
     padding-top: 95px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 h1,
 ul,
 p,

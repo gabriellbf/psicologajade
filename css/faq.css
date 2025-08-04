@@ -2,9 +2,6 @@
     background: var(--cor-j1);
 }
 
-#duvidas {
-  scroll-margin-top: 90px;
-}
 
 .faq h2 {
     margin-top: 60px;
@@ -80,17 +77,5 @@
 
     .faq dl {
         margin-bottom: 32px;
-    }
-}
-
-@media (max-width: 500px) {
-    #duvidas {
-        scroll-margin-top: 150px;
-    }
-}
-
-@media (max-width: 400px) {
-    #duvidas {
-        scroll-margin-top: 200px;
     }
 }

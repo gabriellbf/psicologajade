@@ -4,10 +4,6 @@
     position: relative;
 }
 
-#tea {
-  scroll-margin-top: 90px;
-}
-
 .tea::before {
     content: "";
     background: url(../img/icones/bottom-right.svg) no-repeat bottom;
@@ -102,15 +98,4 @@
     }
 }
 
-@media (max-width: 500px) {
-    #tea {
-        scroll-margin-top: 150px;
-    }
-}
-
-@media (max-width: 400px) {
-    #tea {
-        scroll-margin-top: 200px;
-    }
-}
 

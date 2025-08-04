@@ -1,63 +1,133 @@
-//botões animados ao clicar
+// Borda inferior ativa ao clicar 
 
-const links = document.querySelectorAll(".header-menu a");
+function initBorder() {
+    const headerLinks = document.querySelectorAll(".header-menu a");
 
-function ativarLink (link) {
-    link.addEventListener("click", function () {
-        links.forEach((item) => item.classList.remove("ativo"));
-        this.classList.add("ativo");
-    })
-}
-
-links.forEach(ativarLink);
-
-//FAQ
-
-const perguntas = document.querySelectorAll(".faq button");
-
-function ativarPergunta(event) {
-    const pergunta = event.currentTarget;
-    const controls = pergunta.getAttribute('aria-controls');
-    const resposta = document.getElementById(controls);
-
-    const ativa = resposta.classList.contains("ativa")
-
-    if (ativa) {
-        resposta.style.maxHeight = null;
-        resposta.classList.remove("ativa");
-        pergunta.setAttribute('aria-expanded', false);
-    } else {
-        resposta.style.maxHeight = resposta.scrollHeight + "px";
-        resposta.classList.add("ativa");
-        pergunta.setAttribute('aria-expanded', true);
+    function activeBorder() {
+        headerLinks.forEach((item) => {
+            item.classList.remove("ativo");
+        });
+        this.classList.toggle("ativo");
     }
+
+    headerLinks.forEach((link) => {
+        link.addEventListener("click", activeBorder);
+    });
+}
+initBorder();
+
+// Scroll suave ao click
+
+function initSmoothScroll() {
+  const internalLinks = document.querySelectorAll(".js-menu a[href^='#']");
+  const header = document.querySelector(".header-bg");
+
+  function scrollToPlace(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const target = document.querySelector(href);
+
+    const headerHeight = header.offsetHeight;
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = targetPosition - headerHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+
+  internalLinks.forEach((link) => {
+    link.addEventListener("click", scrollToPlace);
+  });
 }
 
-perguntas.forEach((pergunta) => {
-    pergunta.addEventListener('click', ativarPergunta);
-});
+initSmoothScroll();
 
-//Menu Hambúrguer
+// FAQ
 
-const menuAbrir = document.querySelector('.mobile-menu');
-const menu = document.querySelector('.header-menu');
+function initFaq() {
+    const questions = document.querySelectorAll(".faq button");
 
-menuAbrir.addEventListener('click', () => {
-    menu.classList.toggle('ativo');
-});
+    function activeQuestion(event) {
+        const question = event.currentTarget;
+        const controls = question.getAttribute('aria-controls');
+        const answer = document.getElementById(controls);
 
-const itens = document.querySelectorAll('.header-menu a');
+        const ativa = answer.classList.contains("ativa")
 
-itens.forEach((link) => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('ativo');
-  });
-});
+        if (ativa) {
+            answer.style.maxHeight = null;
+            answer.classList.remove("ativa");
+            question.setAttribute('aria-expanded', false);
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            answer.classList.add("ativa");
+            question.setAttribute('aria-expanded', true);
+        }
+    }
 
-//Animação
+    questions.forEach((question) => {
+        question.addEventListener('click', activeQuestion);
+    });
+}
+initFaq();
+
+// Menu Hambúrguer
+
+function initBuguerMenu() {
+    const openMenu = document.querySelector('.mobile-menu');
+    const menu = document.querySelector('.header-menu');
+
+    openMenu.addEventListener('click', () => {
+        menu.classList.toggle('ativo');
+    });
+
+    const itens = document.querySelectorAll('.header-menu a');
+
+    itens.forEach((link) => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('ativo');
+    });
+    });
+}
+initBuguerMenu();
+
+// Animação
+
+function initAnimaScroll() {
+  const articles = document.querySelectorAll(".js-scroll");
+  const halfWindow = window.innerHeight * 0.6;
+
+  function animaScroll() {
+      articles.forEach((article) => {
+          const articleTop = article.getBoundingClientRect().top;
+          const isArticleVisible = (articleTop - halfWindow) < 0
+          if(isArticleVisible) {
+              article.classList.add("ativo");
+          }
+      })
+  }
+  animaScroll();
+
+  window.addEventListener("scroll", animaScroll);
+}
+initAnimaScroll();
+
+//Plugin animação
+
 if (window.SimpleAnime) {
     new SimpleAnime();
 }
+
+
+
+
+
+
+
+
+
 
 
 

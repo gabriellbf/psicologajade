@@ -2,11 +2,6 @@
 .intro-bg {
     background-color: var(--cor-j1);
 }
-
-#inicio {
-    scroll-margin-top: 120px;
-    
-}
     
 .intro {
     display: grid;
@@ -134,11 +129,5 @@
 @media (max-width: 528px) { 
     .intro-imagem img {
         max-height: 50vh;
-    }
-}
-
-@media (max-width: 500px) {
-    #inicio {
-        scroll-margin-top: 300px;
     }
 }
